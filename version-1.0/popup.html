@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy Web Content</title>
+  <style>
+    body {
+      width: 320px;
+      height: 350px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    select {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      margin-top: 10px;
+    }
+    #status {
+      margin-top: 10px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h2>ContentCapture Pro</h2>
+  <select id="contentType">
+    <option value="all">Full Page Content</option>
+    <option value="article">Article Content</option>
+    <option value="headers">Headers (H1, H2, H3)</option>
+    <option value="links">Links</option>
+  </select>
+  <button id="copyButton">Copy Selected Content</button>
+  <textarea id="contentText" readonly></textarea>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
